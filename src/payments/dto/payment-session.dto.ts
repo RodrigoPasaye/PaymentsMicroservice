@@ -4,6 +4,9 @@ import { ArrayMinSize, IsArray, IsNumber, IsPositive, isString, IsString, Valida
 export class PaymentSessionDto {
 
   @IsString()
+  orderId: string;
+
+  @IsString()
   currency: string;
 
   @IsArray()
